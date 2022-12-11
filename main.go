@@ -13,7 +13,7 @@ var (
 
 func main() {
 	router.LoadHTMLGlob("view/*") //템플릿을 불러오는 방법
-	router.GET("/home", routers.Home)
+	router.GET("/", routers.Home)
 
 	log.Fatal(router.Run(":8080"))
 }
