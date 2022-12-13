@@ -7,8 +7,9 @@
 <body>
     <!--  이 위치에 menu.html 템플릿 포함시키기 -->
     {{template "menu.html" .}}
-    <p><input type="text", name="username", placeholder="id"></p>
-    <p><input type="text", name="password", placeholder="password"></p>
-    <input type="submit">
+    <a class="auth" href="/auth">
+        여기에 변수 선언으로 stataus값
+    </a>
+    {{template "key.html" .}}
 </body>
 </html>
