@@ -12,8 +12,10 @@ var (
 )
 
 func main() {
+	router.Static("/static", "./static")
 	router.LoadHTMLGlob("view/*") //템플릿을 불러오는 방법
 	router.GET("/", routers.Home)
+	router.GET("/auth", routers.Auth)
 
 	log.Fatal(router.Run(":8080"))
 }

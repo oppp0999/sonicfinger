@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.game {
+    display: inline-table;
+    width: 100%;
+}
+
+.game-target-container {
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+    background: #000;
+    text-align: center;
+}
+
+.game-target-container > span {
+    display: inline-block;
+    width: 100px;
+    margin: 10px 20px;
+    padding: 10px;
+    background: yellow;
+    font-weight: bold;
+}
+
+#target {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 100px;
+    color: #FFF;
+}
